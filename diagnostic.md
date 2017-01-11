@@ -5,19 +5,21 @@ Record your responses inside the fenced code blocks below each question.
 1.  Give an example of a visual hierarchy that could be modeled with components. Explain why each piece might be it's own component.
 
     ```md
-    <!-- your response here -->
+    A calendar would have many appointments, with the primary section having a month view and then each day rendered individually on click.
+
+    Each day would be a component since components are meant or reusable elements.
     ```
 
 1.  What is the command to generate a new component called '`my-map`'?
 
     ```sh
-    # your response here
+    ember g component my-map
     ```
 
 1.  What files are created and/or edited to produce a component, and what are their responsibilities?
 
     ```md
-    <!-- your response here -->
+    The component has a directory containing a template (renders the HTML/Handlebars content) and a component.js file that handles properties and actions of the component.
     ```
 
 1.  Suppose you have a component '`my-contact`', which is loaded from
@@ -25,7 +27,7 @@ Record your responses inside the fenced code blocks below each question.
     the syntax (code that is written) to render this component inside that template?
 
     ```html
-    <!-- your response here -->
+    {{my-contact contact=contact}}
     ```
 
 1.  Each contact has multiple phone numbers. Suppose you also have '`my-phone`'
@@ -34,5 +36,5 @@ Record your responses inside the fenced code blocks below each question.
     pass it data?
 
     ```html
-    <!-- your response here -->
+    {{my-contact/my-phone number=number}}
     ```
